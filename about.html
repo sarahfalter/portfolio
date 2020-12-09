@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sarah Falter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="menu">
+        <img class="logo" src="images/logo.png" alt="mylogo" width="150px"/>
+        <ul>
+         <li class="menu-item"><a href="index.html">Home</a></li>
+         <li class="menu-item"><a href="about.html">About</a></li>
+        </ul>
+       </nav>
+      </header>
+
+    <main class="about">
+      <h1>About Me</h1>
+
+       <h2>Who am I?</h2>
+        <p>My name is Sarah, I'm a graduate student at the University of Florida working towards my Master of Arts in Mass Communications with a focus in Web Design and Online Communications. I'm an artist, and spend a lot of my free time painting, and you can see a few of my original pieces on my project page.</p>
+
+        <h2>My Background</h2>
+         <p> I received my Bachelor's in Psychology in 2018 from Florida Atlantic University, I love the beach and I love understanding people. My years of psychology studies prepared me well to understand consumer behavior, and my affinity for art allows me to create materials that evoke meaningful emotions. Now I'm learning how to code so that I can bring my artistic side to the tech world.</p>
+      </main>
+
+      <main class="contact-page">
+        <h2>Let's Get Started</h2>
+         <p>Take the first step towards building your brand and standing out against competitors.</p>
+
+        <form class="form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+
+        <div class="first-name">
+          <label for="firstname" class="label_input_wrap">First Name:</label>
+          <input type="text" name="firstname" id="firstname"/>
+        </div>
+
+        <div class="last-name">
+          <label for="lastname" class="label_input_wrap">Last Name:</label>
+          <input type="text" name="lastname" id="lastname"/>
+        </div>
+
+        <div class="email">
+          <label for="email" class="label_input_wrap">Email:</label>
+          <input type="email" name="email" id="email"/>
+        </div>
+
+        <div class="telephone">
+          <label for="telephone" class="label_input_wrap">Phone Number:</label>
+          <input type="tel" name="telephone" id="telephone"/>
+        </div>
+
+        <div class="dropdown">
+          <label for="dropdown" class="label_input_wrap">Service:</label>
+          <select name="dropdown" id="dropdown">
+            <option value="Logo">Logo Design</option>
+            <option value="Print">Print Design</option>
+            <option value="Brand">Branding</option>
+            <option value="Business">Business Cards</option>
+            <option value="UX">Website Design</option>
+            <option value="Web">Website Development</option>
+          </select>
+        </div>
+
+        <div class="submit">
+           <input type="submit" value="submit"/>
+        </div>
+      </form>
+     </main>
+
+     <footer>
+       <p>Sarah Falter Copyright 2020</p>
+     </footer>
+
+  </body>
+</html>
