@@ -4,32 +4,28 @@
   border-radius: 0;
   box-sizing: border-box;
 }
-
 body {
+  background-image: linear-gradient(to bottom left, #532727,#724848, #EDBEBC);
+  background-attachment: fixed;
   font-family: "Raleway", sans-serif;
   color: #f6f5f5;
 }
 
-/*================
+/*===================
 
 Styling for header
 
-=================*/
+====================*/
 
 header {
-  background: white;
   margin-left: 0;
-  margin-top: 0;
+  margin-top: 45px;
   height: 98px;
-  position: fixed;
-  width: 100%;
-  z-index: 99999;
-  top: 0;
 }
 
 .logo {
-  margin-left: 20px;
-  margin-top: 2px;
+  margin-left: 170px;
+  margin-top: -8px;
   position: absolute;
 }
 
@@ -39,15 +35,13 @@ header {
 }
 
 .menu ul {
-  text-align: right;
+  text-align: center;
   font-size: 16pt;
-  margin-right: 30px;
   position: relative;
 }
 
 .menu-item a {
-  color: #6B5050;
-  font-weight: bold;
+  color: #F7F4F2;
   text-decoration: none;
 
 }
@@ -58,59 +52,58 @@ header {
 }
 
 
-/*===========
+/*=======================
+
 top section
-============*/
 
-.top-section,
-.about {
-  background-image: linear-gradient(to right, #6B5050, #C39282);
-  background-size: cover;
+==========================*/
+
+.top-section {
+  margin-top: -150px;
+  max-width: 100%;
+  padding: 20px;
   min-height: 90vh;
-  margin-top: 97px;
   padding: 50px;
-  animation: bg-animation 5s 2 alternate;
 }
 
-@keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
-}
-.top-section h2 {
-    font-size: 30pt;
-    font-weight: lighter;
-    max-width: 895px;
-    padding: 116px 0px 30px 30px;
+.top-section p {
+  font-size: 28pt;
+  font-weight: lighter;
+  max-width: 836px;
+  margin-left: 120px;
+  margin-bottom: 21px;
 }
 
-.top-section img {
-    margin-left: 235px;
-    margin-top: -43px;
-    position: absolute;
-    z-index: 5;
+.topstyle {
+  margin-top: 400px;
+  margin-left: 400px;
 }
 
+img.line {
+  margin-left: 513px;
+  margin-top: -35px;
+}
+
+img.brush {
+    margin-top: -1000px;
+    border-bottom: 1px solid;
+}
 a.button-collab,
 a.button-projects {
     color: white;
     text-decoration: none;
-    background: #9C8E8E;
-    font-size: 16pt;
+    font-size: 20pt;
     border: 1px white solid;
-    border-radius: 15px;
-    padding: 5px 20px;
+    border-radius: 30px;
+    padding: 5px 75px;
 }
 
 a.button-projects {
   float: right;
   position: relative;
   z-index: 3;
-  margin-right: 774px;
-  margin-top: 137px;
+  margin-right: -645px;
+  margin-top: -60px;
 }
 
 a.button-collab:hover {
@@ -133,176 +126,269 @@ About Me section
   padding: 100px;
 }
 
-.bio {
-    max-width: 600px;
-    line-height: 2;
+.about h1 {
+  font-size: 36pt;
+  text-align: center;
 }
 
-/*===============
-projects gallery
-===============*/
+.bio {
+  max-width: 600px;
+  line-height: 2;
+  margin-top: 70px;
+  min-height: 75vh;
+}
+
+img.me {
+    margin: -435px 0 0 675px;
+    box-shadow: 40px 65px #724848;
+    position: absolute;
+}
+/*==================
+projects page
+====================*/
 
 .projects {
-  background: #D7D5D3 opacity 42%;
-  max-height: auto;
+  width: 100%;
+  min-height: 95vh;
 }
 
-.projects h2 {
-  color: #4d4d4d;
+.projects h1 {
+  color: #EDBEBC;
   font-size: 30pt;
   padding-top: 100px;
   text-align: center;
 }
 
 .projects p {
-  color: #4d4d4d;
+  color: #EDBEBC;
   text-align: center;
   padding-bottom: 30px;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  min-height: 134vh;
-  }
-
-.gallery img {
-  border-radius: 10px;
-  max-width: 400px;
-  flex: 50%;
-  vertical-align: middle;
-
-}
-
-.gallery h3 {
-  color: black;
-  padding: 30px;
-  text-align: center;
 }
 
 .img_display {
   display: none;
 }
 
-.gallery img:hover {
-  background: white;
-  opacity: 0.3;
-  transition: .5s ease;
+/*===================
+Image Gallery
+=====================*/
+
+.container {
+  width: 1300px;
+  min-height: 585px;
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.met_gallery {
-    margin-top: -330px;
+.container .gallerybox {
+  position: relative;
+  width: 600px;
+  max-height: 400px;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  left: 55px;
+  top: 20px;
 }
 
-.portiko_gallery {
-    margin-left: 40px;
-    margin-top: 60px;
+.container .gallerybox .imagebox {
+  position: relative;
+  overflow: hidden;
+
 }
 
-.logo_gallery {
-    margin-left: 40px;
+.container .gallerybox .imagebox img {
+  max-width: 100%;
+  transition: transform 2s;
+
 }
 
-/*=================
+.container .gallerybox:hover .imagebox img {
+  transform: scale(1.2);
+}
+
+.container .gallerybox .details {
+  border-radius: 5px;
+  position: absolute;
+  top: 95px;
+  left: 30px;
+  bottom: 70px;
+  right: 30px;
+  height: 200px;
+  background: #B1ADAA;
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+.container .gallerybox .details i {
+  text-align: center;
+  padding: 2px;
+}
+.container .gallerybox:hover .details {
+  transform: scaleY(1);
+}
+
+.container .gallerybox .details .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+}
+
+.container .gallerybox .details .content h2 {
+  margin: 0;
+  padding: 10px 5px;
+  font-size: 24px;
+  color: #532727;
+}
+
+.container .gallerybox .details .content p {
+  color: white;
+  text-align: center;
+}
+
+.click {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/*=====================
+
 My Services Section
-=================== */
+
+======================= */
 
 .services-section {
-  background-color: #D7D5D3 opacity 40%;
-  border-top: 1px dashed #707070;
-  color: #707070;
-  padding: 100px;
+  min-height: 100vh;
 }
 
-.services-section h3 {
-  font-size: 36pt;
-  margin-bottom: 10px;
+.services-section h1 {
+    color: #EDBEBC;
+    text-align: center;
+    padding-top: 290px;
+    font-size: 36pt;
+    font-weight: lighter;
 }
-.services-section ul {
-  font-size: 18pt;
+.toolbox {
+  position: relative;
+  background: #724848;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+  display: inline-block;
+  top: 115px;
+  left: 617px;
+  margin: 10px 20px
+}
+
+.toolbox .info {
+  position: relative;
+}
+
+.toolbox:hover {
+  background: white;
+  color: #724848;
+  transition: .6s ease;
+}
+
+.toolbox .info h2 {
+  font-size: 20pt;
+  text-align: center;
+}
+
+.info ul li {
   list-style: none;
-  line-height: 3;
+  text-align: center;
+  line-height: 2;
+  margin-top: 5px;
 }
 
-.services-section img {
-  border: 0.5px solid #707070;
+.toolbox .info i {
+  font-size: 40px;
+  color: #EDBEBC;
+  margin: 18px 168px;
 }
-.businesscard {
-    max-width: 400px;
-    margin-left: 630px;
-    margin-top: -515px;
-    margin-bottom: 65px;
-}
+/*======================
 
-/*===================
 Contact Form Styling
+
 ======================*/
 
-.contact-form body {
-  background: #D7D5D3;
+main#contact {
+    min-height: 79vh;
 }
 
-.contact-page h2 {
+.contact-page h1 {
     font-size: 30pt;
-    margin: 60px 0px 0px 50px;
-    color: #707070;
+    margin: 60px 0 0 50px;
+    padding: 30px 0 10px 0px;
+    text-align: center;
 }
 
 .contact-page p {
     margin: 0px 10px 0px 50px;
-    color: #707070;
-}
-
-.contact-form body {
-  background: #D7D5D3;
 }
 
 .label_input_wrap {
-  color: #707070;
+  color: white;
 }
 
 .form {
-  max-width: 200px;
+  max-width: 300px;
   padding: 10px 50px;
 }
 
 form.form {
-    line-height: 1.5;
+    line-height: 2.5;
+    margin: 0 auto;
 }
 
 input#firstname, #lastname, #email, #telephone, #dropdown {
-    background: #CAA5A5;
+    background: #E5E5E6;
     border: none;
     border-radius: 3px;
+    color: #724848;
     padding: 5px;
 }
 
 input[type="submit"] {
-    padding: 5px 30px;
+    padding: 5px 40px;
     margin: 23px 0px 0px 30px;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
+}
+
+.submit {
+  margin-bottom: 70px;
 }
 
 input[type="submit"]:hover{
-  color: gray;
+  background: white;
+  color: #EDBEBC;
+  transition: .2s ease;
 }
 
-/*================
+/*========================
+
 Footer Styling
-==================*/
+
+=========================*/
 
 footer {
-    background: #B1ADAA;
+    background: white;
     padding: 40px;
 }
 
 footer ul li {
+  color: #724848;
   display: inline-block;
-  font-size: 30px;
+  font-size: 40px;
   list-style: none;
   padding: 10px;
 }
@@ -313,6 +399,7 @@ footer ul {
 
 footer p {
   text-align: center;
+  color: #724848;
 }
 
 .logofooter {

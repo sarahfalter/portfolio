@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ELSM85EYZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7ELSM85EYZ');
+</script>
+
     <meta charset="utf-8">
     <title>Sarah Falter</title>
 
@@ -9,23 +19,29 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/6a2b3eaa5e.js" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
 
     <header>
       <nav class="menu">
-        <img class="logo" src="images/logo.png" alt="mylogo" width="150px"/>
-        <ul>
+        <img class="logo" src="images/logo_whiteedit.png" alt="mylogo" width="150px"/>
+         <ul>
          <li class="menu-item"><a href="index.html">Home</a></li>
          <li class="menu-item"><a href="about.html">About</a></li>
+         <li class="menu-item"><a href="#projects">Projects</a></li>
+         <li class="menu-item"><a href="about.html/#contact">Contact</a></li>
         </ul>
        </nav>
       </header>
 
     <main class="about">
+
+      <h1>Sarah Falter</h1>
+
      <div class="bio">
-      <h1>About Me</h1>
 
        <h2>Who am I?</h2>
         <p>My name is Sarah, I'm a graduate student at the University of Florida working towards my Master of Arts in Mass Communications with a focus in Web Design and Online Communications. I'm an artist, and spend a lot of my free time painting, and you can see a few of my original pieces on my project page.</p>
@@ -33,11 +49,14 @@
         <h2>My Background</h2>
          <p> I received my Bachelor's in Psychology in 2018 from Florida Atlantic University, I love the beach and I love understanding people. My years of psychology studies prepared me well to understand consumer behavior, and my affinity for art allows me to create materials that evoke meaningful emotions. Now I'm learning how to code so that I can bring my artistic side to the tech world.</p>
      </div>
+
+     <img class="me" src="images/me6.png" alt="sarahfalter" width="400px"/>
+
     </main>
 
-      <main class="contact-page">
-        <h2>Let's Get Started</h2>
-         <p>Take the first step towards building your brand and standing out against competitors.</p>
+      <main class="contact-page" id="contact">
+        <h1>Let's Get Started</h1>
+
 
         <form class="form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
 
@@ -80,7 +99,14 @@
      </main>
 
      <footer>
-       <p>Sarah Falter Copyright 2020</p>
+       <img class="logofooter" src="images/logo.png" alt="mylogo" width="200px"/>
+
+       <ul>
+         <li><i class="fab fa-instagram"></i></li>
+         <li><i class="fab fa-linkedin-in"></i></li>
+         <li><i class="fas fa-envelope"></i></li>
+      </ul>
+      <p>Sarah Falter Copyright 2020</p>
      </footer>
 
   </body>
