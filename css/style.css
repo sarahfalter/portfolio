@@ -7,10 +7,13 @@
 body {
   background-image: linear-gradient(to bottom left, #532727,#724848, #EDBEBC);
   background-attachment: fixed;
-  font-family: "Raleway", sans-serif;
+  font: 16pt "Raleway", sans-serif;
   color: #f6f5f5;
 }
 
+title {
+  display: none;
+}
 /*===================
 
 Styling for header
@@ -19,7 +22,7 @@ Styling for header
 
 header {
   margin-left: 0;
-  margin-top: 45px;
+  margin-top: 25px;
   height: 98px;
 }
 
@@ -36,7 +39,7 @@ header {
 
 .menu ul {
   text-align: center;
-  font-size: 16pt;
+  font-size: 10pt;
   position: relative;
 }
 
@@ -60,56 +63,57 @@ top section
 
 .top-section {
   margin-top: -150px;
-  max-width: 100%;
+  max-width: 80%;
   padding: 20px;
   min-height: 90vh;
   padding: 50px;
 }
 
 .top-section p {
-  font-size: 28pt;
+  font-size: 18pt;
   font-weight: lighter;
-  max-width: 836px;
+  max-width: 600px;
   margin-left: 120px;
   margin-bottom: 21px;
 }
 
 .topstyle {
-  margin-top: 400px;
-  margin-left: 400px;
+  margin-top: 300px;
+  margin-left: 180px;
+  max-width: 750px;
 }
 
 img.line {
-  margin-left: 513px;
+  margin-left: 439px;
   margin-top: -35px;
 }
 
 img.brush {
-    margin-top: -1000px;
+    margin: -1000px 0 0 -75px;
     border-bottom: 1px solid;
 }
 a.button-collab,
 a.button-projects {
     color: white;
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 16pt;
     border: 1px white solid;
     border-radius: 30px;
-    padding: 5px 75px;
+    padding: 5px 55px;
 }
 
 a.button-projects {
   float: right;
   position: relative;
   z-index: 3;
-  margin-right: -645px;
-  margin-top: -60px;
+  margin-right: -450px;
+  margin-top: -43px;
 }
 
 a.button-collab:hover {
   background: white;
   color: #CAA5A5;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 
 a.button-projects:hover {
@@ -123,23 +127,28 @@ About Me section
 ==============*/
 
 .about {
-  padding: 100px;
+  max-width: 800px;
 }
 
 .about h1 {
-  font-size: 36pt;
+  font-size: 26pt;
   text-align: center;
 }
 
+.about h2 {
+  padding: 10px 0;
+}
+
 .bio {
-  max-width: 600px;
-  line-height: 2;
+  max-width: 650px;
+  line-height: 1.5;
   margin-top: 70px;
+  margin-left: 200px;
   min-height: 75vh;
 }
 
 img.me {
-    margin: -435px 0 0 675px;
+    margin: -435px 0 0 833px;
     box-shadow: 40px 65px #724848;
     position: absolute;
 }
@@ -148,7 +157,8 @@ projects page
 ====================*/
 
 .projects {
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   min-height: 95vh;
 }
 
@@ -174,8 +184,8 @@ Image Gallery
 =====================*/
 
 .container {
-  width: 1300px;
-  min-height: 585px;
+  width: 800px;
+  min-height: 480px;
   margin: 70px auto 0;
   display: flex;
   flex-direction: row;
@@ -184,13 +194,11 @@ Image Gallery
 
 .container .gallerybox {
   position: relative;
-  width: 600px;
-  max-height: 400px;
+  width: 400px;
+  max-height: 240px;
   box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
-  left: 55px;
-  top: 20px;
 }
 
 .container .gallerybox .imagebox {
@@ -212,11 +220,11 @@ Image Gallery
 .container .gallerybox .details {
   border-radius: 5px;
   position: absolute;
-  top: 95px;
+  top: 70px;
   left: 30px;
   bottom: 70px;
   right: 30px;
-  height: 200px;
+  height: 150px;
   background: #B1ADAA;
   transform: scaleY(0);
   transition: transform .5s;
@@ -237,26 +245,27 @@ Image Gallery
 }
 
 .container .gallerybox .details .content h2 {
+  font-size: 12pt;
   margin: 0;
   padding: 10px 5px;
-  font-size: 24px;
+  text-align: center;
   color: #532727;
 }
 
 .container .gallerybox .details .content p {
   color: white;
+  font-size: 10pt;
   text-align: center;
 }
 
-.click {
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
+a.button-view {
+  background: white;
+  border-radius: 10px;
+  color: #532727;
+  font-size: 10pt;
+  margin-left: 120px;
+  padding: 5px 10px;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
 /*=====================
 
@@ -266,25 +275,26 @@ My Services Section
 
 .services-section {
   min-height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+  text-aign: center;
 }
 
 .services-section h1 {
     color: #EDBEBC;
     text-align: center;
-    padding-top: 290px;
-    font-size: 36pt;
+    padding: 100px 0;
+    font-size: 20pt;
     font-weight: lighter;
+    margin-top: 100px
 }
 .toolbox {
-  position: relative;
   background: #724848;
-  padding: 10px;
-  width: 400px;
-  height: 300px;
+  padding: 15px;
+  width: 310px;
+  height: 285px;
   display: inline-block;
-  top: 115px;
-  left: 617px;
-  margin: 10px 20px
+  margin: 13px;
 }
 
 .toolbox .info {
@@ -298,21 +308,22 @@ My Services Section
 }
 
 .toolbox .info h2 {
-  font-size: 20pt;
+  font-size: 18pt;
   text-align: center;
+  padding-top: 5px;
 }
 
 .info ul li {
   list-style: none;
-  text-align: center;
   line-height: 2;
   margin-top: 5px;
+  text-align: center;
 }
 
 .toolbox .info i {
-  font-size: 40px;
+  font-size: 34px;
   color: #EDBEBC;
-  margin: 18px 168px;
+  margin-left: 110px;
 }
 /*======================
 
@@ -325,8 +336,8 @@ main#contact {
 }
 
 .contact-page h1 {
-    font-size: 30pt;
-    margin: 60px 0 0 50px;
+    font-size: 28pt;
+    margin-top: 80px;
     padding: 30px 0 10px 0px;
     text-align: center;
 }
@@ -345,7 +356,7 @@ main#contact {
 }
 
 form.form {
-    line-height: 2.5;
+    line-height: 2;
     margin: 0 auto;
 }
 
@@ -358,10 +369,11 @@ input#firstname, #lastname, #email, #telephone, #dropdown {
 }
 
 input[type="submit"] {
-    padding: 5px 40px;
-    margin: 23px 0px 0px 30px;
-    border: none;
-    border-radius: 30px;
+  color: #724848;
+  padding: 5px 40px;
+  margin: 23px 0px 0px 30px;
+  border: none;
+  border-radius: 30px;
 }
 
 .submit {
@@ -381,18 +393,21 @@ Footer Styling
 =========================*/
 
 footer {
-    background: white;
-    padding: 40px;
+  background: white;
+  padding: 40px;
 }
 
 footer ul li {
-  color: #724848;
   display: inline-block;
   font-size: 40px;
-  list-style: none;
   padding: 10px;
+  list-style: none;
 }
 
+footer ul a {
+  color: #724848;
+  list-style: none;
+}
 footer ul {
   text-align: center;
 }
