@@ -9,12 +9,14 @@ body {
   background-attachment: fixed;
   font: 16pt "Raleway", sans-serif;
   color: #f6f5f5;
+  max-width: 2560px;
 }
 
 body p::selection {
   background: white;
   color: #724848;
 }
+
 /*===================
 
 Styling for header
