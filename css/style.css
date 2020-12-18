@@ -11,8 +11,9 @@ body {
   color: #f6f5f5;
 }
 
-title {
-  display: none;
+body p::selection {
+  background: white;
+  color: #724848;
 }
 /*===================
 
@@ -128,11 +129,6 @@ About Me section
 
 .about {
   max-width: 800px;
-}
-
-.about h1 {
-  font-size: 26pt;
-  text-align: center;
 }
 
 .about h2 {
@@ -401,12 +397,11 @@ footer ul li {
   display: inline-block;
   font-size: 40px;
   padding: 10px;
-  list-style: none;
 }
 
 footer ul a {
   color: #724848;
-  list-style: none;
+  text-decoration: none;
 }
 footer ul {
   text-align: center;
