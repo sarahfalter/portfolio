@@ -7,9 +7,8 @@
 }
 
 body {
-background: #D7D5D3;
-font-family: sans-serif;
-color: #4d4d4d;
+background-image: linear-gradient(to bottom left, #532727,#724848, #EDBEBC);
+color: white;
 }
 
 .container {

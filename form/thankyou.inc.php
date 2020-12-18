@@ -7,9 +7,9 @@
 }
 
 body {
-background: #D7D5D3;
+background-image: linear-gradient(to bottom left, #532727,#724848, #EDBEBC);
 font-family: sans-serif;
-color: #4d4d4d;
+color: white;
 }
 
 .container {
@@ -21,5 +21,5 @@ color: #4d4d4d;
 
 <div class="container">
  <h1>Thank you!</h1>
-  <p>Thanks for your interest. we have received your message, and we will be in touch shortly.</p>
+  <p>Thanks for reaching out, I will get back with you shortly.</p>
 </div>
